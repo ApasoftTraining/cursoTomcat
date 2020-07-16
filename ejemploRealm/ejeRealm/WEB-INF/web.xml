@@ -39,7 +39,7 @@
     
     <security-role>
         <role-name>usuario</role-name>
-    <security-role>
+    </security-role>
 
 
 </web-app>
