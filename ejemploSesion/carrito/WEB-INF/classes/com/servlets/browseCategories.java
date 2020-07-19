@@ -13,22 +13,22 @@ public class browseCategories extends HttpServlet
 
 		response.setContentType("text/html");
 		ServletOutputStream out = response.getOutputStream();
-		out.print("<HTML><HEAD><TITLE>Supply Categories</TITLE></HEAD>");
+		out.print("<HTML><HEAD><TITLE>Categorias</TITLE></HEAD>");
 		out.print("<BODY><CENTER>");
 
 
 
 		out.print("<table>");
-		out.print("<tr><td><CENTER><b><h2>Dizzyworld Store</h2></b></CENTER></td>");
+		out.print("<tr><td><CENTER><b><h2>Apasoft Training</h2></b></CENTER></td>");
 		out.print("</tr>");
 		out.print("</table>");
 		out.print("<FONT SIZE='4' COLOR='navy'>");
 
-		Enumeration enum = request.getParameterNames();
+		Enumeration enum1= request.getParameterNames();
 
-		while (enum.hasMoreElements())
+		while (enum1.hasMoreElements())
 		{
-			String name = (String) enum.nextElement();
+			String name = (String) enum1.nextElement();
 			if (name.equals("boxWriting"))
 				getWritingSupplies(out);
 			if (name.equals("boxPaper"))
@@ -48,10 +48,10 @@ public class browseCategories extends HttpServlet
 	{
 		out.print("<TABLE WIDTH='75%' ALIGN='center' BGCOLOR='wheat'>");
 		out.print("<TR><TD COLSPAN='2' ALIGN='center'>Oracle</TD></TR>");
-		out.print("<TR><TD ALIGN='right' WIDTH='50%'>box of 12 pens (black)</TD><TD ALIGN='left' WIDTH='50%'>&nbsp;&nbsp;&nbsp;4.99</TD></TR>");
-		out.print("<TR><TD ALIGN='right'>box of 12 pens (blue)</TD><TD ALIGN='left'>&nbsp;&nbsp;&nbsp;4.99</TD></TR>");
-		out.print("<TR><TD ALIGN='right'>box of 12 pens (red)</TD><TD ALIGN='left'>&nbsp;&nbsp;&nbsp;4.99</TD></TR>");
-		out.print("<TR><TD ALIGN='right'>3 mechanical pencils</TD><TD ALIGN='left'>&nbsp;&nbsp;&nbsp;8.99</TD></TR>");
+		out.print("<TR><TD ALIGN='right' WIDTH='50%'>Oracle SQL</TD><TD ALIGN='left' WIDTH='50%'>&nbsp;&nbsp;&nbsp;9.99</TD></TR>");
+		out.print("<TR><TD ALIGN='right'>Oracle PL/SQL</TD><TD ALIGN='left'>&nbsp;&nbsp;&nbsp;9.99</TD></TR>");
+		out.print("<TR><TD ALIGN='right'>Oracle PL/SQL avanzado</TD><TD ALIGN='left'>&nbsp;&nbsp;&nbsp;9.99</TD></TR>");
+		out.print("<TR><TD ALIGN='right'>Administracion</TD><TD ALIGN='left'>&nbsp;&nbsp;&nbsp;9.99</TD></TR>");
 		out.print("</TABLE><BR><BR>");
 	}
 
@@ -59,10 +59,10 @@ public class browseCategories extends HttpServlet
 	{
 		out.print("<TABLE WIDTH='75%' ALIGN='center' BGCOLOR='wheat'>");
 		out.print("<TR><TD COLSPAN='2' ALIGN='center'>Contenedores</TD></TR>");
-		out.print("<TR><TD ALIGN='right' WIDTH='50%'>package of 500 sheets multipurpose paper</TD><TD ALIGN='left' WIDTH='50%'>&nbsp;&nbsp;&nbsp;6.99</TD></TR>");
-		out.print("<TR><TD ALIGN='right'>package of 5 legal pads</TD><TD ALIGN='left'>&nbsp;&nbsp;&nbsp;15.99</TD></TR>");
-		out.print("<TR><TD ALIGN='right'>100 Post-It notes</TD><TD ALIGN='left'>&nbsp;&nbsp;&nbsp;7.99</TD></TR>");
-		out.print("<TR><TD ALIGN='right'>1 subject notebook</TD><TD ALIGN='left'>&nbsp;&nbsp;&nbsp;2.99</TD></TR>");
+		out.print("<TR><TD ALIGN='right' WIDTH='50%'>Docker</TD><TD ALIGN='left' WIDTH='50%'>&nbsp;&nbsp;&nbsp;6.99</TD></TR>");
+		out.print("<TR><TD ALIGN='right'>Kubernetes</TD><TD ALIGN='left'>&nbsp;&nbsp;&nbsp;15.99</TD></TR>");
+		out.print("<TR><TD ALIGN='right'>Openshift</TD><TD ALIGN='left'>&nbsp;&nbsp;&nbsp;7.99</TD></TR>");
+		out.print("<TR><TD ALIGN='right'>Helm</TD><TD ALIGN='left'>&nbsp;&nbsp;&nbsp;2.99</TD></TR>");
 		out.print("</TABLE><BR><BR>");
 	}
 
@@ -70,9 +70,9 @@ public class browseCategories extends HttpServlet
 	{
 		out.print("<TABLE WIDTH='75%' ALIGN='center' BGCOLOR='wheat'>");
 		out.print("<TR><TD COLSPAN='2' ALIGN='center'>Java</TD></TR>");
-		out.print("<TR><TD ALIGN='right' WIDTH='50%'>corner computer desk</TD><TD ALIGN='left' WIDTH='50%'>&nbsp;&nbsp;&nbsp;199.99</TD></TR>");
-		out.print("<TR><TD ALIGN='right'>adjustable chair</TD><TD ALIGN='left'>&nbsp;&nbsp;&nbsp;99.99</TD></TR>");
-		out.print("<TR><TD ALIGN='right'>leather adjustable chair</TD><TD ALIGN='left'>&nbsp;&nbsp;&nbsp;139.99</TD></TR>");
+		out.print("<TR><TD ALIGN='right' WIDTH='50%'>Desarrollo Java</TD><TD ALIGN='left' WIDTH='50%'>&nbsp;&nbsp;&nbsp;199.99</TD></TR>");
+		out.print("<TR><TD ALIGN='right'>Java avanzado</TD><TD ALIGN='left'>&nbsp;&nbsp;&nbsp;99.99</TD></TR>");
+		out.print("<TR><TD ALIGN='right'>Persistencia Java</TD><TD ALIGN='left'>&nbsp;&nbsp;&nbsp;139.99</TD></TR>");
 		out.print("</TABLE><BR><BR>");
 	}
 }

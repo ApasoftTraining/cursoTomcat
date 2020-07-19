@@ -4,6 +4,8 @@ import java.io.*;
 import javax.servlet.*;
 import javax.servlet.http.*;
 import java.util.*;
+import java.util.Vector;
+import java.util.Enumeration;
 
 public class viewShoppingCart extends HttpServlet
 {
@@ -35,15 +37,15 @@ public class viewShoppingCart extends HttpServlet
 			out.print("Nothing in shopping cart<BR><BR>");
 		} else {
 
-			Enumeration enum = scitems.elements();
+			Enumeration enum1 = scitems.elements();
 
 			out.print("<BR><TABLE WIDTH='75%' BGCOLOR='wheat'>");
 			out.print("<TR><TD>Item</TD><TD>Price</TD></TR>");
 			System.out.println("Your shopping cart includes: ");
 
-			while (enum.hasMoreElements())
+			while (enum1.hasMoreElements())
 			{
-				shoppingCartItem item = (shoppingCartItem) enum.nextElement();
+				shoppingCartItem item = (shoppingCartItem) enum1.nextElement();
 
 				out.print("<TR><TD>" + item.getName() + "</TD><TD>" + item.getPrice() + "</TD></TR>");
 				System.out.println("\tItem: " + item.getName() + " price: " + item.getPrice());

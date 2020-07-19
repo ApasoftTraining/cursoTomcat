@@ -10,7 +10,7 @@
 <tr><td align="left"><%@ include file="pages/includes/DWRHeader1.jspf" %></td></tr>
 <tr><td><CENTER><b><h3>Bienvenido a los cursos de Apasoft Training</h3></b></CENTER></td>
 <tr><td>&nbsp;</td><tr>
-<tr align="left"><td><b>Selecciona las categoria</b></A></td><tr>
+<tr align="left"><td><b>Selecciona las categorias</b></A></td><tr>
 </tr>
 </table>
 
@@ -27,7 +27,7 @@
 		<TD>Java</TD>
 	</TR>
 	<TR><TD COLSPAN="2" ALIGN="center">
-		<INPUT TYPE="submit" NAME="btnSubmit" VALUE="Retrieve Items"></TD>
+		<INPUT TYPE="submit" NAME="btnSubmit" VALUE="Recuperar elementos"></TD>
 	</TR>
 
 </TABLE>

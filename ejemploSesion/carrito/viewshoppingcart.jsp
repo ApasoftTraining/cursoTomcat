@@ -32,10 +32,9 @@
 
 <BR>
 
-<A HREF="./welcome.jsp">Volver a la página principal</A>
+<A HREF="./welcome.jsp">Volver a la pagina principal</A>
 <BR>
 </CENTER>
 <BR>
-<%@ include file="pages/includes/DWRFooter1.jspf" %>
 </BODY>
 </HTML>
