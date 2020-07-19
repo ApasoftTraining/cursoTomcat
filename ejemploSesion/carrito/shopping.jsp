@@ -80,6 +80,6 @@
 <BR>
 
 <BR>
-<%@ include file="pages/includes/DWRFooter1.jspf" %>
+
 </BODY>
 </HTML>
