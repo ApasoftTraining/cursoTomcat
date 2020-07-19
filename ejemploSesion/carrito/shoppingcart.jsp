@@ -1,5 +1,5 @@
 <HTML>
-<HEAD><TITLE>Shopping Page</TITLE></HEAD>
+<HEAD><TITLE>Pagina de compra</TITLE></HEAD>
 
 <BODY>
 <%@ page import="com.servlets.*" %>
@@ -7,7 +7,7 @@
 
 <table>
 <tr><td align="left"><%@ include file="pages/includes/DWRHeader1.jspf" %></td></tr>
-<tr><td><CENTER><b><h3>Dizzyworld Store</h3></b></CENTER></td></tr>
+<tr><td><CENTER><b><h3>Apasoft Training</h3></b></CENTER></td></tr>
 </table><BR>
 
 
@@ -37,7 +37,7 @@
 
 <BR>
 
-<A HREF="./welcome.jsp">Back To The Home Page</A>
+<A HREF="./welcome.jsp">Volver a la pagina principal</A>
 <BR>
 </CENTER>
 <BR>

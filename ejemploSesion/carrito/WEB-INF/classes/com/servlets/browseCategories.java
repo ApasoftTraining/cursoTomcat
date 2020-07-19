@@ -39,7 +39,7 @@ public class browseCategories extends HttpServlet
 
 		}
 		out.print("</FONT>");
-		out.print("<BR><A HREF='./welcome.jsp'>Back To Home Page</A><BR>");
+		out.print("<BR><A HREF='./welcome.jsp'>Volver a la pagina principal</A><BR>");
 		out.print("</BODY></HTML>");
 
 	}
@@ -47,7 +47,7 @@ public class browseCategories extends HttpServlet
 	public void getWritingSupplies(ServletOutputStream out) throws IOException
 	{
 		out.print("<TABLE WIDTH='75%' ALIGN='center' BGCOLOR='wheat'>");
-		out.print("<TR><TD COLSPAN='2' ALIGN='center'>Writing Supplies</TD></TR>");
+		out.print("<TR><TD COLSPAN='2' ALIGN='center'>Oracle</TD></TR>");
 		out.print("<TR><TD ALIGN='right' WIDTH='50%'>box of 12 pens (black)</TD><TD ALIGN='left' WIDTH='50%'>&nbsp;&nbsp;&nbsp;4.99</TD></TR>");
 		out.print("<TR><TD ALIGN='right'>box of 12 pens (blue)</TD><TD ALIGN='left'>&nbsp;&nbsp;&nbsp;4.99</TD></TR>");
 		out.print("<TR><TD ALIGN='right'>box of 12 pens (red)</TD><TD ALIGN='left'>&nbsp;&nbsp;&nbsp;4.99</TD></TR>");
@@ -58,7 +58,7 @@ public class browseCategories extends HttpServlet
 	public void getPaperSupplies(ServletOutputStream out) throws IOException
 	{
 		out.print("<TABLE WIDTH='75%' ALIGN='center' BGCOLOR='wheat'>");
-		out.print("<TR><TD COLSPAN='2' ALIGN='center'>Paper Supplies</TD></TR>");
+		out.print("<TR><TD COLSPAN='2' ALIGN='center'>Contenedores</TD></TR>");
 		out.print("<TR><TD ALIGN='right' WIDTH='50%'>package of 500 sheets multipurpose paper</TD><TD ALIGN='left' WIDTH='50%'>&nbsp;&nbsp;&nbsp;6.99</TD></TR>");
 		out.print("<TR><TD ALIGN='right'>package of 5 legal pads</TD><TD ALIGN='left'>&nbsp;&nbsp;&nbsp;15.99</TD></TR>");
 		out.print("<TR><TD ALIGN='right'>100 Post-It notes</TD><TD ALIGN='left'>&nbsp;&nbsp;&nbsp;7.99</TD></TR>");
@@ -69,7 +69,7 @@ public class browseCategories extends HttpServlet
 	public void getFurnitureSupplies(ServletOutputStream out) throws IOException
 	{
 		out.print("<TABLE WIDTH='75%' ALIGN='center' BGCOLOR='wheat'>");
-		out.print("<TR><TD COLSPAN='2' ALIGN='center'>Furniture Supplies</TD></TR>");
+		out.print("<TR><TD COLSPAN='2' ALIGN='center'>Java</TD></TR>");
 		out.print("<TR><TD ALIGN='right' WIDTH='50%'>corner computer desk</TD><TD ALIGN='left' WIDTH='50%'>&nbsp;&nbsp;&nbsp;199.99</TD></TR>");
 		out.print("<TR><TD ALIGN='right'>adjustable chair</TD><TD ALIGN='left'>&nbsp;&nbsp;&nbsp;99.99</TD></TR>");
 		out.print("<TR><TD ALIGN='right'>leather adjustable chair</TD><TD ALIGN='left'>&nbsp;&nbsp;&nbsp;139.99</TD></TR>");
